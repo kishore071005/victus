@@ -2,8 +2,8 @@
 
 echo "BUILD START"
 
-# Install python dependencies
-python3.9 -m pip install -r backend/requirements.txt
+# Install python dependencies using the available pip
+python3 -m pip install -r backend/requirements.txt
 
 # Build frontend
 cd frontend
