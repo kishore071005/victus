@@ -27,7 +27,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "build_files.sh"
+      "dest": "frontend/dist/$1"
     }
   ]
 }
