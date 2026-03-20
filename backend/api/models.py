@@ -48,7 +48,7 @@ class WorkerProfile(models.Model):
 class EnterpriseProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='enterprise_profile')
     business_name = models.CharField(max_length=100)
-    location = models.CharField(max_length=100)
+    location = models.CharField(max_length=100, null=True, blank=True)
     
     # GPS Integration
     latitude = models.FloatField(null=True, blank=True)
