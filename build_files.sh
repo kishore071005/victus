@@ -12,6 +12,6 @@ npm install --no-package-lock --legacy-peer-deps
 npm run build
 cd ..
 
-python3 backend/manage.py collectstatic --noinput --clear
+./venv/bin/python3 backend/manage.py collectstatic --noinput --clear
 
 echo "BUILD END"

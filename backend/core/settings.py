@@ -130,7 +130,7 @@ STATICFILES_DIRS = [
     BASE_DIR.parent / 'frontend' / 'dist',
 ]
 # Use WhiteNoise's storage for cache-busting static files
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
